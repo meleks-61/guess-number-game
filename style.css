@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    
+ 
+    
+}
+    
+
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:250px;
+    
+
+}
+/* body{
+    font-family: "Helvetica Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#number{
+    min-width: 30%;
+    height: 40px;
+    border-radius: 6px;
+    /* padding-left: 20px; */
+    text-align: center;
+}
+#check{
+    margin-left: 20px;
+    height: 40px;
+    width: 100%;
+    border-radius: 100%;
+    /* padding-left: 100px; */
+}
