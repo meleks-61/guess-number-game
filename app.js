@@ -27,6 +27,7 @@ function checkF(){
     
     const b =parseFloat(inputElement.value);
     
+    
 
 
     
@@ -40,7 +41,7 @@ function checkF(){
         console.log("tebrikler");
         // answerElement.classList.add('animate__animated', 'animate__flash');
         answerElement.style.backgroundColor="white"
-        count+=1
+        
   
     }  
     else if ((100 >= b) && (b > a)){
@@ -72,13 +73,13 @@ function checkF(){
         answerElement.classList.add('animate__animated', 'animate__bounce');
 
         console.log("please enter nuber in 0-100");
-        answerElement.style.backgroundColor = "oranged";
+        answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
         
     }else if(isNaN(b)){
         answerElement.innerHTML="<h3>invalid syntax</h3>";
         answerElement.classList.add('animate__animated', 'animate__bounce');
-        answerElement.style.backgroundColor = "oranged";
+        answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
     }
         
