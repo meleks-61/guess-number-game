@@ -5,15 +5,19 @@ const inputElement =document.querySelector("#number");
 
 const checkElement=document.querySelector("#check");
 
-const answerElement=document.querySelector("#answer")
+const answerElement=document.querySelector("#answer");
 
-const gifElement=document.querySelector("#gif")
+const gifElement=document.querySelector("#gif");
+
+const finalElement=document.querySelector("#final");
 
 const randomNumber = ()=>{
     return Math.floor(Math.random()*100);
 
 }
 const a =randomNumber();
+let count=0 ;
+
 
 
 
@@ -26,6 +30,34 @@ const a =randomNumber();
 function checkF(){
     
     const b =parseFloat(inputElement.value);
+    count+=1;
+
+    // if ( b === a) {
+
+        
+    //     gifElement.src="./img/tenor.gif";
+    //     answerElement.innerHTML =""
+
+    //     console.log("tebrikler");
+    //     // answerElement.classList.add('animate__animated', 'animate__flash');
+    //     answerElement.style.backgroundColor="white"
+    //     count+=0;
+        
+  
+    // }  
+    // while (a!==b) {
+    //     count+=1
+
+
+    //     break;
+
+
+
+
+    // }
+
+
+
     
     
 
@@ -41,6 +73,8 @@ function checkF(){
         console.log("tebrikler");
         // answerElement.classList.add('animate__animated', 'animate__flash');
         answerElement.style.backgroundColor="white"
+        finalElement.innerHTML =`Number of attempts  : ${count}`
+        
         
   
     }  
@@ -50,8 +84,10 @@ function checkF(){
         console.log("please enter smaler number");
         answerElement.classList.add('animate__animated', 'animate__wobble');
 
-        answerElement.style.backgroundColor = "lightblue";
+        answerElement.style.backgroundColor = "lightyellow";
         answerElement.style.borderRadius="50%";
+        
+        
         
 
        
@@ -65,6 +101,7 @@ function checkF(){
 
         console.log("please enter bigger number");
         
+        
        
     
     }else if (b>100 || b< 0 ) {
@@ -76,16 +113,19 @@ function checkF(){
         answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
         
+        
     }else if(isNaN(b)){
         answerElement.innerHTML="<h3>invalid syntax</h3>";
         answerElement.classList.add('animate__animated', 'animate__bounce');
         answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
+        
     }
+   
         
     console.log(a);
     console.log(b);
-    console.log();
+    console.log(count);
     // console.log(inputElement.value);
     // console.log(typeof(inputElement.value));    
     // console.log(typeof(answerElement))
