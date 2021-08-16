@@ -32,48 +32,18 @@ function checkF(){
     const b =parseFloat(inputElement.value);
     count+=1;
 
-    // if ( b === a) {
-
-        
-    //     gifElement.src="./img/tenor.gif";
-    //     answerElement.innerHTML =""
-
-    //     console.log("tebrikler");
-    //     // answerElement.classList.add('animate__animated', 'animate__flash');
-    //     answerElement.style.backgroundColor="white"
-    //     count+=0;
-        
-  
-    // }  
-    // while (a!==b) {
-    //     count+=1
-
-
-    //     break;
-
-
-
-
-    // }
-
-
-
     
-    
-
-
-    
-
     if ( b === a) {
 
         
-        gifElement.src="./img/tenor.gif";
-        answerElement.innerHTML =""
+        gifElement.style.display = "block"
+        answerElement.style.display = "none"
+        
 
         console.log("tebrikler");
-        // answerElement.classList.add('animate__animated', 'animate__flash');
         answerElement.style.backgroundColor="white"
         finalElement.innerHTML =`Number of attempts  : ${count}`
+        finalElement.style.backgroundColor = "blueviolet"
         
         
   
@@ -84,7 +54,8 @@ function checkF(){
         console.log("please enter smaler number");
         answerElement.classList.add('animate__animated', 'animate__wobble');
 
-        answerElement.style.backgroundColor = "lightyellow";
+        answerElement.style.backgroundColor = "orange";
+        answerElement.style.color = "purple";
         answerElement.style.borderRadius="50%";
         
         
@@ -96,7 +67,8 @@ function checkF(){
     }else if ((0<= b) && (b < a)) {
         answerElement.innerHTML="<h3>please enter bigger number</h3>";
         answerElement.classList.add('animate__animated', 'animate__tada');
-        answerElement.style.backgroundColor = "yellow";
+        answerElement.style.backgroundColor = "purple";
+        answerElement.style.color = "orange";
         answerElement.style.borderRadius="50%"
 
         console.log("please enter bigger number");
