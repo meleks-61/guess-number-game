@@ -84,6 +84,7 @@ function checkF(){
         console.log("please enter nuber in 0-100");
         answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
+        answerElement.color="black"
         
         
     }else if(isNaN(b)){
@@ -91,6 +92,7 @@ function checkF(){
         answerElement.classList.add('animate__animated', 'animate__bounce');
         answerElement.style.backgroundColor = "orange";
         answerElement.style.borderRadius="50%";
+        answerElement.color="black"
         
     }
    
