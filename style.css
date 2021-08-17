@@ -9,6 +9,7 @@ body {
   background-image: url(./img/137c1af9287223828b02529e2b2718a8.jpg);
   background-repeat: no-repeat;
   
+  
   background-size: cover;
   background-attachment: fixed;
   background-position:center;
@@ -20,6 +21,7 @@ body {
   
   height: 100vh;
 }
+
 
 .container {
     
